@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculate()  //Returning-function-from-another-function
+        {
+            return function()
+            {
+                let c = 5
+                let d = 5
+                alert(c+d);
+            }
+        }
+        let show = calculate();
+        show();
+    </script>
+
+    <script>
+        function add(a,b){  //passing-function-as-an-argument
+            return a + b;
+        }
+        function calculatee(fun,x,y){
+            document.write(fuun(x,y));  //document.write is used to used to show message on the page itself
+        }
+        calculate(add, 10, 20)
+    </script>
+</body>
+</html>
